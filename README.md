@@ -37,10 +37,38 @@ Jade can extract style types such as `exp` and `un` and links from within the co
 <img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/rd_ex.jpg' height = '200px'></a>
 <br>
-```
-exp ||| Experimental
-WARNING: Most models in this folder are really... uh... weird
-```
+```lm ||| La Muse```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/lm_ex.jpg' height = '200px'></a>
+<br>
+```rp ||| Rainbow Princess```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/rp_ex.jpg' height = '200px'></a>
+<br>
+```sc ||| The Scream```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/sc_ex.jpg' height = '200px'></a>
+<br>
+```sc ||| The Scream```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/sc_ex.jpg' height = '200px'></a>
+<br>
+```wr ||| Wreck (George Washington)```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/wr_ex.jpg' height = '200px'></a>
+<br>
+```wv ||| Wave```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/wv_ex.jpg' height = '200px'></a>
+<br>
+```exp ||| Experimental```
+```WARNING: Most models in this folder are really... uh... weird```
 <br>
 <img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
