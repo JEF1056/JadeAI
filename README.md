@@ -14,6 +14,9 @@ Add Jade at https://discordbots.org/bot/410253782828449802
 Can you style this using un? [Attach Image]
 Use exp to style [Image Link]
 ```
-Jade can extract stlye types such as `exp` and `un` and links from within the command phrase.
+Jade can extract style types such as `exp` and `un` and links from within the command phrase.
 
-#### Style types
+#### Style types (Flags)
+```un ||| Udnie style ```
+<img src = 'examples/un_ex.jpg' height = '200px'></a>
+
