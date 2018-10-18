@@ -17,6 +17,7 @@ Use exp to style [Image Link]
 Jade can extract style types such as `exp` and `un` and links from within the command phrase.
 
 #### Style types (Flags)
+<details><summary>EXPAND</summary>
 <p>
 ```un ||| Udnie ```
 <br>
@@ -69,4 +70,5 @@ Jade can extract style types such as `exp` and `un` and links from within the co
 <img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
 <br>
-<p>
+</p>
+</details>
