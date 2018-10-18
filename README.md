@@ -18,5 +18,6 @@ Jade can extract style types such as `exp` and `un` and links from within the co
 
 #### Style types (Flags)
 ```un ||| Udnie style ```
-<img src = 'examples/un_ex.jpg' height = '200px'></a>
+<br>
+<img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
 
