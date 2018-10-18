@@ -5,15 +5,36 @@ Add Jade at https://discordbots.org/bot/410253782828449802
 
 # JadeV4 Usage
 --------
+Jade's Prefix is `JD`, and is used to trigger all possible commands through NLP.
+Prefix is not required in DMs.
 
 ## Example syntax:
 --------
 
+### Contextual Generative Conversation
+Query:
+```
+Hi!
+How old are you?
+```
+Response:
+```
+Hi, I don't know you!
+I am 9 years old.
+```
+Jade can do basic math, with space as delimiters. Some basic hardcoded functions also exist.
+
 ### Neural style
+Query:
 ```
 Can you style this using un? [Attach Image]
 Use exp to style [Image Link]
 ```
+Response:
+<br>
+<img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
+<br>
 Jade can extract style types such as `exp` and `un` and links from within the command phrase.
 
 #### Style types (Flags)
