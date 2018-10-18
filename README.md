@@ -14,6 +14,34 @@ Add Jade at https://discordbots.org/bot/410253782828449802
 Can you style this using un? [Attach Image]
 Use exp to style [Image Link]
 ```
-Jade can extract stlye types such as `exp` and `un` and links from within the command phrase.
+Jade can extract style types such as `exp` and `un` and links from within the command phrase.
 
-#### Style types
+#### Style types (Flags)
+```un ||| Udnie ```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
+<br>
+```dk ||| Dark Paint```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/dk_ex.jpg' height = '200px'></a>
+<br>
+```en ||| Enviornment```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/env_ex.jpg' height = '200px'></a>
+<br>
+```rd||| Red```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/rd_ex.jpg' height = '200px'></a>
+<br>
+```
+exp ||| Experimental
+WARNING: Most models in this folder are really... uh... weird
+```
+<br>
+<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
+<br>
