@@ -22,9 +22,9 @@ Response:
 Hi, I don't know you!
 I am 9 years old.
 ```
-Jade can do basic math, with space as delimiters. Some basic hardcoded functions also exist.
+Jade can do basic math, with spaces as delimiters. Some basic hardcoded functions also exist.
 
-### Neural style
+### Neural Style
 Query:
 ```
 Can you style this using un? [Attach Image]
@@ -35,63 +35,71 @@ Response:
 <img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
 <br>
-Jade can extract style types such as `exp` and `un` and links from within the command phrase.
+Jade can extract style types (flags) such as `exp` and `un` and links from within the command phrase.
 
 #### Style types (Flags)
 <details><summary>EXPAND</summary>
 <p>
   
+Listed below are flags, in the format `FLAG ||| NAME OF STYLE IMAGE`. Left images are the original, Right images are styled by Jade.
 ```un ||| Udnie ```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
 <br>
 ```dk ||| Dark Paint```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/dk_ex.jpg' height = '200px'></a>
 <br>
 ```en ||| Enviornment```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/env_ex.jpg' height = '200px'></a>
 <br>
 ```rd||| Red```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/rd_ex.jpg' height = '200px'></a>
 <br>
 ```lm ||| La Muse```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/lm_ex.jpg' height = '200px'></a>
 <br>
 ```rp ||| Rainbow Princess```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/rp_ex.jpg' height = '200px'></a>
 <br>
 ```sc ||| The Scream```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/sc_ex.jpg' height = '200px'></a>
 <br>
 ```wr ||| Wreck (George Washington)```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/wr_ex.jpg' height = '200px'></a>
 <br>
 ```wv ||| Wave```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/wv_ex.jpg' height = '200px'></a>
 <br>
 ```exp ||| Experimental```
 ```WARNING: Most models in this folder are really... uh... weird```
 <br>
-<img src = 'EXAMPLE/Nikon-D810-Image-Sample-6.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
 <br>
 
 </p>
 </details>
+
+### Object Recognition
+Query:
+```
+What objects are in this image? [Attach Image]
+Can you find the dog in this picture? [Image Link]
+```
