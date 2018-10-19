@@ -30,6 +30,9 @@ Query:
 Can you style this using un? [Attach Image]
 Use exp to style [Image Link]
 ```
+*[Attach Image] and [Image Link] would reference [This image](https://github.com/JEF1056/JadeAI/blob/master/EXAMPLE/style_ex.jpg) in this demo.*
+<br>
+<br>
 Response:
 <br>
 <img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
@@ -103,3 +106,13 @@ Query:
 What objects are in this image? [Attach Image]
 Can you find the dog in this picture? [Image Link]
 ```
+*[Attach Image] would reference [This image](https://github.com/JEF1056/JadeAI/blob/master/EXAMPLE/obj_ex_d.jpg) in this demo.*
+*[Image Link] would reference [This image](https://github.com/JEF1056/JadeAI/blob/master/EXAMPLE/obj_ex_fd.jpg) in this demo.
+<br>
+<br>
+Response:
+<br>
+<img src = 'EXAMPLE/d_ex.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/fd_ex.jpg' height = '200px'></a>
+<br>
+
