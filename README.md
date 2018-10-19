@@ -107,7 +107,8 @@ What objects are in this image? [Attach Image]
 Can you find the dog in this picture? [Image Link]
 ```
 *[Attach Image] would reference [This image](https://github.com/JEF1056/JadeAI/blob/master/EXAMPLE/obj_ex_d.jpg) in this demo.*
-*[Image Link] would reference [This image](https://github.com/JEF1056/JadeAI/blob/master/EXAMPLE/obj_ex_fd.jpg) in this demo.
+<br>
+*[Image Link] would reference [This image](https://github.com/JEF1056/JadeAI/blob/master/EXAMPLE/obj_ex_fd.jpg) in this demo.*
 <br>
 <br>
 Response:
