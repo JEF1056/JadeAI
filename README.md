@@ -48,6 +48,8 @@ Jade can extract style types (flags) such as `exp` and `un` and links from withi
 <p>
   
 Listed below are flags, in the format `FLAG ||| NAME OF STYLE IMAGE`. Left images are the original, Right images are styled by Jade.
+<br>
+<br>
 ```un ||| Udnie ```
 <br>
 <img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
