@@ -23,7 +23,8 @@ Hi, I don't know you!
 I am 9 years old.
 ```
 Jade can do basic math, with spaces as delimiters. Some basic hardcoded functions also exist.
-
+####
+--------
 ### Neural Style
 Query:
 ```
@@ -99,7 +100,8 @@ Listed below are flags, in the format `FLAG ||| NAME OF STYLE IMAGE`. Left image
 
 </p>
 </details>
-
+####
+--------
 ### Object Recognition
 Query:
 ```
@@ -116,4 +118,5 @@ Response:
 <img src = 'EXAMPLE/d_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/fd_ex.jpg' height = '200px'></a>
 <br>
-
+####
+--------
