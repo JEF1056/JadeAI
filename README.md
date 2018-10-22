@@ -127,3 +127,23 @@ Response:
 
 ####
 --------
+
+### Object Recognition
+Query:
+```
+What text is in this image? [Attach Image]
+Could read this for me? [Image Link]
+```
+*[Attach Image] would reference [This image](UPLOAD PENDING) in this demo.*
+<br>
+*[Image Link] would reference [This image](UPLOAD PENDING) in this demo.*
+<br>
+<br>
+Response:
+<br>
+```
+UPLOAD EXAMPLES
+```
+
+####
+--------
