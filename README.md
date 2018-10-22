@@ -128,7 +128,7 @@ Response:
 ####
 --------
 
-### Object Recognition
+### Optical Character Recognition
 Query:
 ```
 What text is in this image? [Attach Image]
