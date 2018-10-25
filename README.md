@@ -95,6 +95,13 @@ Listed below are flags, in the format `FLAG ||| NAME OF STYLE IMAGE`. Left image
 <img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
 <img src = 'EXAMPLE/wv_ex.jpg' height = '200px'></a>
 <br>
+```ha ||| My artist's art ^-^```
+```Works best with images that have a "focus"```
+<br>
+<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/ha_ex.jpg' height = '200px'></a>
+<br>
+
 ```exp ||| Experimental```
 ```WARNING: Most models in this folder are really... uh... weird```
 <br>
@@ -134,16 +141,18 @@ Query:
 What text is in this image? [Attach Image]
 Could read this for me? [Image Link]
 ```
-*[Attach Image] would reference [This image](UPLOAD PENDING) in this demo.*
-<br>
-*[Image Link] would reference [This image](UPLOAD PENDING) in this demo.*
+*[Attach Image] and [Image Link] would reference [This image](EXAMPLE/ocr_ex.png) in this demo.*
 <br>
 <br>
 Response:
 <br>
 ```
-UPLOAD EXAMPLES
+Use JD to talk to Jadel Jade is a Tensorflow-driven Al, that,
+learns as a conversation progresses using
+Reenforcement learning!
 ```
+<br>
+Note: Spelling issues are directly copied from output.
 
 ####
 --------
