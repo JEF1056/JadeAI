@@ -12,6 +12,10 @@ Prefix is not required in DMs.
 --------
 
 ### Contextual Generative Conversation
+
+<details><summary>Chatting Instructions</summary>
+<p>
+  
 Query:
 ```
 Hi!
@@ -23,6 +27,9 @@ Hi, I don't know you!
 I am 9 years old.
 ```
 Jade can do basic math, with spaces as delimiters. Some basic hardcoded functions also exist.
+
+</p>
+</details>
 
 ####
 --------
