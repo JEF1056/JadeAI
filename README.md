@@ -146,8 +146,47 @@ Could read this for me? [Image Link]
 <br>
 Response:
 <br>
-<img src = 'EXAMPLE/ocr_re_ex.jpg' height = '200px'></a>
+<img src = 'EXAMPLE/ocr_re_ex.jpg' width='380px'></a>
 <br>
 
 ####
 --------
+
+### Face Recognition
+Query:
+```
+Who is this? [Attach Image]
+Do know who the people in this image: [Image Link] are?
+```
+*[Attach Image] and [Image Link] would reference [This image](EXAMPLE/fr_ex.png) in this demo.*
+<br>
+<br>
+Response:
+<br>
+<img src = 'EXAMPLE/fr_re_ex.jpg' width='200px'></a>
+<br>
+```Justin Timberlake```
+<br>
+Note: This operation works with multiple faces in an image.
+
+##
+--------
+
+#### Adding Faces
+```DO NOT ADD FACES IF NOT NESSISARY. ONLY ADD FACES IF THE ORIGINAL IMAGE RETURNS "Unknown"```
+<br>
+<br>
+Query:
+```
+Add "Justin Timberlake" using this: [Image Link]
+This is "Justin Timberlake" [Attach Image]
+```
+**The "" are REQUIRED around names to be added.**
+<br>
+*[Attach Image] and [Image Link] would reference [This image](EXAMPLE/fr_ex.png) in this demo.*
+<br>
+<br>
+Response:
+<br>
+```Added face "Justin Timberlake" to my library in 22742ms```
+<br>
