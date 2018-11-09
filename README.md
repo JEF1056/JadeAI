@@ -28,6 +28,10 @@ Jade can do basic math, with spaces as delimiters. Some basic hardcoded function
 --------
 
 ### Neural Style
+
+<details><summary>Style Instructions</summary>
+<p>
+  
 Query:
 ```
 Can you style this using un? [Attach Image]
@@ -43,8 +47,10 @@ Response:
 <br>
 Jade can extract style types (flags) such as `exp` and `un` and links from within the command phrase.
 
-#### Style types (Flags)
-<details><summary>EXPAND</summary>
+</p>
+</details>
+
+<details><summary>Style Types (Flags)</summary>
 <p>
   
 Listed below are flags, in the format `FLAG ||| NAME OF STYLE IMAGE`. Left images are the original, Right images are styled by Jade.
@@ -116,6 +122,10 @@ Listed below are flags, in the format `FLAG ||| NAME OF STYLE IMAGE`. Left image
 --------
 
 ### Object Recognition
+
+<details><summary>Object Recognition Instructions</summary>
+<p>
+  
 Query:
 ```
 What objects are in this image? [Attach Image]
@@ -132,10 +142,17 @@ Response:
 <img src = 'EXAMPLE/fd_ex.jpg' height = '200px'></a>
 <br>
 
+</p>
+</details>
+
 ####
 --------
 
 ### Optical Character Recognition
+
+<details><summary>OCR Instructions</summary>
+<p>
+  
 Query:
 ```
 What text is in this image? [Attach Image]
@@ -149,10 +166,17 @@ Response:
 <img src = 'EXAMPLE/ocr_re_ex.jpg' width='380px'></a>
 <br>
 
+</p>
+</details>
+
 ####
 --------
 
 ### Face Recognition
+
+<details><summary>Face Recognition Instructions</summary>
+<p>
+  
 Query:
 ```
 Who is this? [Attach Image]
@@ -169,10 +193,12 @@ Response:
 <br>
 Note: This operation works with multiple faces in an image.
 
-##
---------
+</p>
+</details>
 
-#### Adding Faces
+<details><summary>Adding Faces</summary>
+<p>
+  
 ```DO NOT ADD FACES IF NOT NESSISARY. ONLY ADD FACES IF THE ORIGINAL IMAGE RETURNS "Unknown"```
 <br>
 <br>
@@ -190,3 +216,9 @@ Response:
 <br>
 ```Added face "Justin Timberlake" to my library in 22742ms```
 <br>
+
+</p>
+</details>
+
+####
+--------
