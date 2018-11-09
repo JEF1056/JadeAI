@@ -146,13 +146,8 @@ Could read this for me? [Image Link]
 <br>
 Response:
 <br>
-```
-Use JD to talk to Jadel Jade is a Tensorflow-driven Al, that,
-learns as a conversation progresses using
-Reenforcement learning!
-```
+<img src = 'EXAMPLE/ocr_re_ex.jpg' height = '200px'></a>
 <br>
-Note: Spelling issues are directly copied from output.
 
 ####
 --------
