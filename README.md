@@ -15,7 +15,7 @@ Prefix is not required in DMs.
 
 <details><summary>Chatting Instructions</summary>
 <p>
-  
+
 Query:
 ```
 Hi!
@@ -49,8 +49,8 @@ Use exp to style [Image Link]
 <br>
 Response:
 <br>
-<img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/un_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/exp_ex.jpg' height = '200px' width="355"></a>
 <br>
 Jade can extract style types (flags) such as `exp` and `un` and links from within the command phrase.
 
@@ -65,61 +65,60 @@ Listed below are flags, in the format `FLAG ||| NAME OF STYLE IMAGE`. Left image
 <br>
 ```un ||| Udnie ```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/un_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/un_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```dk ||| Dark Paint```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/dk_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/dk_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```en ||| Enviornment```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/env_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/env_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```rd||| Red```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/rd_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/rd_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```lm ||| La Muse```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/lm_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/lm_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```rp ||| Rainbow Princess```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/rp_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/rp_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```sc ||| The Scream```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/sc_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/sc_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```wr ||| Wreck (George Washington)```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/wr_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/wr_ex.jpg' height = '200px' width="355"></a>
 <br>
 ```wv ||| Wave```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/wv_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/wv_ex.jpg' height = '200px' width="355"></a>
 <br>
-```ha ||| My artist's art ^-^```
+```ha1 ||| My artist's art ^-^```
 ```Works best with images that have a "focus"```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/ha_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/ha_ex.jpg' height = '200px' width="355"></a>
 <br>
-
 ```exp ||| Experimental```
 ```WARNING: Most models in this folder are really... uh... weird```
 <br>
-<img src = 'EXAMPLE/style_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/exp_ex.jpg' height = '200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/style_ex.jpg' height = '200px' width="355"></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/exp_ex.jpg' height = '200px' width="355"></a>
 <br>
 
 </p>
@@ -145,8 +144,10 @@ Can you find the dog in this picture? [Image Link]
 <br>
 Response:
 <br>
-<img src = 'EXAMPLE/d_ex.jpg' height = '200px'></a>
-<img src = 'EXAMPLE/fd_ex.jpg' height = '200px'></a>
+
+<img src="https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/d_ex.jpg" height="200" width="355"/></a>
+<img src="https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/fd_ex.jpg" height="200" width="355"/></a>
+
 <br>
 
 </p>
@@ -165,12 +166,14 @@ Query:
 What text is in this image? [Attach Image]
 Could read this for me? [Image Link]
 ```
-*[Attach Image] and [Image Link] would reference [This image](EXAMPLE/ocr_ex.png) in this demo.*
+*[Attach Image] would reference [This image](UPLOAD PENDING) in this demo.*
+<br>
+*[Image Link] would reference [This image](UPLOAD PENDING) in this demo.*
 <br>
 <br>
 Response:
 <br>
-<img src = 'EXAMPLE/ocr_re_ex.jpg' width='380px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/ocr_re_ex.jpg' width='380px' height = '64px'></a>
 <br>
 
 </p>
@@ -194,9 +197,10 @@ Do know who the people in this image: [Image Link] are?
 <br>
 Response:
 <br>
-<img src = 'EXAMPLE/fr_re_ex.jpg' width='200px'></a>
+<img src = 'https://raw.githubusercontent.com/JEF1056/JadeAI/master/EXAMPLE/fr_re_ex.jpg' height = '355' width='200px'>
 <br>
 ```Justin Timberlake```
+<br>
 <br>
 Note: This operation works with multiple faces in an image.
 
@@ -229,3 +233,4 @@ Response:
 
 ####
 --------
+[![Discord Bots](https://discordbots.org/api/widget/410253782828449802.svg)](https://discordbots.org/bot/410253782828449802)
