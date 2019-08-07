@@ -1,7 +1,12 @@
-This git repository IS NOT the full code for Jade, and does not include pre-trained models and any equations/conepts and/or training scripts used to train 
-Jade. The code included is ONLY the running code for Jade, and should be used for educational purposes only. It does not include any scripts/code written in R or any custom dependencies.
+Hey, what's this?! A chatbot?
+
+Jade is really simple to get up and running. Just get some data, such as these [anime subtitles](https://www.kaggle.com/jef1056/anime-subtitles) (*ahem shameless plug*), rename it to `inputcln.txt`, move it to the same directory as the `.py` file, and start the program with the `-train` flag.
+
+BAM, it'll eat all your RAM and CPU until suddenly you have a 2-3 gb model (`.p`) file. *Run without the `-train` flag for faster, more nyoom speeds.*
 
 Add Jade at https://discordbots.org/bot/410253782828449802
+
+# ***ALL BELOW IS OUTDATED, AND IS NO LONGER SUPPORTED***
 
 # JadeV4 Usage
 --------
