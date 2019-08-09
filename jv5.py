@@ -1,3 +1,4 @@
+# Import all the dependencies
 import pandas as pd
 import numpy as np
 import pickle
@@ -12,6 +13,11 @@ from sklearn.pipeline import make_pipeline
 
 import argparse
 
+# Log starting time
+from datetime import datetime
+t1 = datetime.now()
+
+# Define something to allow simple t/f args such as "-train"
 def str2bool(v):
     if isinstance(v, bool):
        return v
@@ -22,22 +28,25 @@ def str2bool(v):
     else:
         raise argparse.ArgumentTypeError('Boolean value expected.')
 
+# Parser of args ;D
 parser = argparse.ArgumentParser(description='Add training/loading fuctionality')
 parser.add_argument("-train", type=str2bool, nargs='?', const=True, default=False,
                         help="Train (will otherwise load)")
 parser.add_argument("-path", type=str, default="pipe.p",
                         help="training output path")
+parser.add_argument("-input", type=str, default="inputcln.txt",
+                        help="training output path")
 parser.add_argument("-size", type=int, default=350,
                         help="size for the training compression")                       
 args = parser.parse_args()
 
+# Nou, matplotlib
 import warnings
 warnings.filterwarnings("ignore")
 
 if args.train == True:
-    print("Training!")
     # Read file
-    lines = [line.rstrip('\n').replace('\\n',' ').replace('>','') for line in open('inputcln.txt')]
+    lines = [line.rstrip('\n').replace('\\n',' ').replace('>','') for line in open(args.input)]
 
     subtitles = pd.DataFrame(columns=['context', 'reply'])
     subtitles['context'] = lines
@@ -58,6 +67,8 @@ if args.train == True:
 
     matrix_big.shape
 
+    # Depending on the size of your data, you want ARPACK 
+    # to at least keep around 50% or more of your data
     svd = TruncatedSVD(n_components=args.size, algorithm='arpack')
     svd.fit(matrix_big)
 
@@ -73,7 +84,7 @@ def softmax(x):
 
 # Choosing one of the k nearest neighbors with BallTree algorithm
 class NeighborSampler(BaseEstimator):
-    def __init__(self, k=5, temperature = 1.0):
+    def __init__(self, k=8, temperature = 1.2):
         self.k = k
         self.temperature = temperature
     
@@ -84,10 +95,12 @@ class NeighborSampler(BaseEstimator):
     def predict(self, X, random_state = None):
         distances, indeces = self.tree_.query(X, return_distance = True, k = self.k)
         result = []
+        dist = []
         for distance, index in zip(distances, indeces):
             result.append(np.random.choice(index, p = softmax(distance * self.temperature)))
+            dist.append(distance)
             
-        return self.y_[result]
+        return self.y_[result], dist
 
 ns = NeighborSampler()
 
@@ -97,14 +110,14 @@ if args.train == True:
     # Vectorize, SVD and then chose an answer
     pipe = make_pipeline(vectorizer, svd, ns)
 
+    #save the pipe variable for the sake of faster loading
     with open(args.path, 'wb') as pickle_file:
         pickle.dump(pipe, pickle_file, protocol=4)
-    print("Truncation complete")
 else:
-    print("Loading!")
     with open(args.path, 'rb') as fp:
         pipe = pickle.load(fp)
 
+#undo the vectorization from ealier
 def fixpunctuation(sentence):
     sentence=sentence.replace(' !', "!")
     sentence=sentence.replace(' ?', "?")
@@ -113,6 +126,7 @@ def fixpunctuation(sentence):
     sentence=sentence.replace(' :', ":")
     return sentence
 
+#import some discord stuff
 import os, os.path
 import sys
 import asyncio
@@ -121,25 +135,53 @@ import discord
 asyncio.set_event_loop(asyncio.new_event_loop())
 import aiohttp
 client = discord.AutoShardedClient()
+global headers, url
 
 @client.event
 async def on_ready():
+    global headers, url
+    dbltoken = "noice"
+    url = "https://discordbots.org/api/bots/" + str(client.user.id) + "/stats"
+    headers = {"Authorization" : dbltoken}
     print('Logged in as '+client.user.name+' (ID:'+str(client.user.id)+') | Connected to '+str(len(client.guilds))+' servers | Connected to '+ str(len(set(client.get_all_members()))) +' users')
     print('--------')
     print('You are running "nut."') #Do not change this. This will really help us support you, if you need support.
     print('--------')
     print("Discord.py verison: " + discord.__version__)
     print('--------')
+    print("Ready in " + str(datetime.now() - t1))
+    print('--------')
     print(str(len(client.shards))+" shard(s)")   
-    await client.change_presence(activity=discord.Game(name="wow pls don't just copy code, learn how to code.", type=3), status=discord.Status.do_not_disturb)
+    await client.change_presence(activity=discord.Game(name="Someone talk to me!!!!", type=3), status=discord.Status.idle)
+    
+    payload = {"server_count"  : len(client.guilds)}
+    async with aiohttp.ClientSession() as aioclient:
+            await aioclient.post(url, data=payload, headers=headers)
+
+@client.event         
+async def on_server_join(server):
+    global headers, url
+    payload = {"server_count"  : len(client.guilds)}
+    async with aiohttp.ClientSession() as aioclient:
+            await aioclient.post(url, data=payload, headers=headers)
+
+@client.event
+async def on_server_remove(server):
+    global headers, url
+    payload = {"server_count"  : len(client.guilds)}
+    async with aiohttp.ClientSession() as aioclient:
+            await aioclient.post(url, data=payload, headers=headers)
     
 @client.event        
 async def on_message(message):
     if not message.author.bot:
         if message.content.startswith('JD ') or message.content.startswith('jd '):
             ModMessage = message.content[3:]
-            response=fixpunctuation(pipe.predict([ModMessage])[0])
-            print(str(message.author)+": " + ModMessage + "\nJade: " + response + "\n")
+            p_resp, dist = pipe.predict([ModMessage])
+            response=fixpunctuation(p_resp[0])
+            print(datetime.time())
+            print(str(message.author)+": " + ModMessage + "\nJade: " + response)
+            print("Probability: "+str(dist).replace("array", "")[2:][:-2] + "\n")
             await message.channel.send(response)
     
-client.run("hahahahahahah *evil laugh*")
+client.run("Nou")
