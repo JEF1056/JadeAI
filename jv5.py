@@ -179,7 +179,7 @@ async def on_message(message):
             ModMessage = message.content[3:]
             p_resp, dist = pipe.predict([ModMessage])
             response=fixpunctuation(p_resp[0])
-            print(datetime.time())
+            print(datetime.now())
             print(str(message.author)+": " + ModMessage + "\nJade: " + response)
             print("Probability: "+str(dist).replace("array", "")[2:][:-2] + "\n")
             await message.channel.send(response)
